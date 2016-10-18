@@ -1,0 +1,10 @@
+.footer {
+  padding: 45px 0;
+  background: $gray;
+  -webkit-box-shadow: inset 0px 38px 45px -8px rgba(1,2,2,0.12);
+  -moz-box-shadow: inset 0px 38px 45px -8px rgba(1,2,2,0.12);
+  box-shadow: inset 0px 38px 45px -8px rgba(1,2,2,0.12);
+  .logo {
+    max-width: 46px;
+  }
+}
