@@ -296,11 +296,13 @@ form {
 .about-us {
   h1 {
     font-size: 1.875em;
-    margin: 30px 0;
+    margin: 50px 0 40px;
+    text-align: center;
   }
   p {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 20px;
+    text-align: justify;
   }
 }
