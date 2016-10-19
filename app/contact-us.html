@@ -92,8 +92,8 @@
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
-            <li class="active"><a href="/products.html">Products</a></li>
-            <li><a href="/contact-us.html">Contact Us</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li class="active"><a href="/contact-us.html">Contact Us</a></li>
           </ul>
         </div>
         <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
@@ -101,8 +101,8 @@
           <ul class="nav navmenu-nav">
             <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
-            <li class="active"><a href="/products.html">Products</a></li>
-            <li><a href="/contact-us.html">Contact Us</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li class="active"><a href="/contact-us.html">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -112,53 +112,50 @@
   <div class="main-wrapper">
 
     <div class="main-content container">
-      <div class="section">
-        <div class="row product">
-          <div class="col-md-8 product__previews">
-            <img class="img-responsive product-image" src="https://placeholdit.imgix.net/~text?txtsize=72&txt=769%C3%97469&w=769&h=469" alt="">
-            <div class="row product-swatches">
-              <div class="col-xs-3">
-                <a href=""><img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt=""></a>
+      <div class="section section--contact-us">
+        <div class="row">
+          <div class="col-md-6 contact-form">
+            <h1 class="contact-form__title">Contact Us</h1>
+            <p class="contact-form__text">For all order and custom enquiries, please get in touch via the form below or contact us at filefixphil@yahoo.com</p>
+            <form action="">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Your Name">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Your Phone/Mobile">
+                  </div>
+                </div>
               </div>
-              <div class="col-xs-3">
-                <a href=""><img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt=""></a>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email Address">
               </div>
-              <div class="col-xs-3">
-                <a href=""><img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt=""></a>
+              <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
               </div>
-              <div class="col-xs-3">
-                <a href=""><img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200" alt=""></a>
-              </div>
-            </div>
+            </form>
           </div>
-          <div class="col-md-4">
-            <div class="product-details">
-              <h1 class="product-details__name">Red Box Universal</h1>
-              <h4 class="product-details__sub">Office Essentials</h4>
-              <p class="product-details__desc">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                <br/><br/>
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-              <div class="row color-swatches">
-                <div class="col-xs-2 col-sm-1 col-md-2">
-                  <a href="" class="color color--red"></a>
-                </div>
-                <div class="col-xs-2 col-sm-1 col-md-2">
-                  <a href="" class="color color--blue"></a>
-                </div>
-                <div class="col-xs-2 col-sm-1 col-md-2">
-                  <a href="" class="color color--black"></a>
-                </div>
-                <div class="col-xs-2 col-sm-1 col-md-2">
-                  <a href="" class="color color--green"></a>
-                </div>
-                <div class="col-xs-2 col-sm-1 col-md-2">
-                  <a href="" class="color color--yellow"></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-6">
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var uluru = {lat: 13.953762, lng: 121.139782};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 15,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLnN_dLZH0-4T7kAi0cRnGU5cFDRnrSDQ&callback=initMap">
+            </script>
           </div>
         </div>
       </div>
